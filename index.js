@@ -1,6 +1,6 @@
 let boo_1 = {
    title: "theeqdas misrebles",
-   auther: "myadaef momas",
+   author: "myadaef momas",
    pages: 333,
 };
 let boo = {
@@ -10,21 +10,30 @@ let boo = {
 };
 
 let main = document.querySelector("main");
-
+let newBookButton = document.querySelector(".new-book");
+let formPage = document.querySelector(".form-page");
 let myLibrary = [boo_1, boo];
 
-for (item of myLibrary) {
-   let bookName = document.createElement("div");
+newBookButton.addEventListener("click", () => {
+   formPage.classList.remove("hide");
+});
 
-   bookName.innerHTML = `
+// formPage.addEventListener("click", () => {
+//    formPage.classList.add("hide");
+// });
+
+for (item of myLibrary) {
+   let card = document.createElement("div");
+   card.classList.add("card");
+
+   card.innerHTML = `
    <div> ${item.title} <\div>
-   <div> ${item.auther} <\div>
+   <div> ${item.author} <\div>
    <div> ${item.pages} <\div>`;
 
-   main.appendChild(bookName);
+   main.appendChild(card);
 }
 
-fo;
 function Book() {
    // the constructor...
 }
