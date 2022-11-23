@@ -15,10 +15,27 @@
       <main></main>
       <div class="form-page hide">
          <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <button class="btn">Add</button>
+            <label for="book-name">
+               inter the book name:
+               <input type="text" id="book-name" name="book-name" />
+            </label>
+            <label for="book-pages">
+               inter the book author:
+               <input type="text" id="book-author" name="book-author" />
+            </label>
+            <label for="book-pages">
+               inter pages number:
+               <input type="number" id="book-pages" name="book-pages" />
+            </label>
+
+            <div>
+               <p>did you read the book yet ?</p>
+               <input type="radio" id="read" name="book-read" value="true" />
+               <label for="read"> yes</label>
+               <input type="radio" id="not-read" name="book-read" value="" />
+               <label for="not-read"> no</label>
+            </div>
+            <button type="button" class="btn new-book add-book">Add</button>
          </form>
       </div>
       <script src="index.js"></script>
