@@ -14,6 +14,7 @@ let bookAuthor = document.querySelector("#book-author");
 let bookPages = document.querySelector("#book-pages");
 let addBookBtn = document.querySelector(".add-book");
 let bookRead = document.querySelectorAll('input[name="book-read"]');
+let goBackBtn = document.querySelector(".go-back");
 
 function addBookToLibrary() {
    let readStatus = undefined;
@@ -38,7 +39,7 @@ function addBookToLibrary() {
 }
 
 addBookBtn.addEventListener("click", addBookToLibrary);
-
+goBackBtn.addEventListener("click", () => formPage.classList.toggle("hide"));
 // DOM manipulation and changes
 // ***************************************************************************************************8
 let main = document.querySelector("main");
