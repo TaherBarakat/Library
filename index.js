@@ -1,11 +1,15 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-   this.title = title.toUpperCase();
-   this.author = author.toUpperCase();
-   this.pages = pages;
-   this.read = read;
+class Book {
+   constructor(title, author, pages, read) {
+      this.title = title.toUpperCase();
+      this.author = author.toUpperCase();
+      this.pages = pages;
+      this.read = read;
+   }
 }
+
+// function Book(title, author, pages, read) {}
 // form functionality
 // ********************************************************************************************************
 let data__ = 0;
